@@ -29,6 +29,9 @@ export const Heading = styled.h1`
   font-weight: 700;
   color: ${({ theme }) => theme.tertiaryFont};
   opacity: 0.09;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `
 export const TechStacks = styled.div`
   width: 100%;

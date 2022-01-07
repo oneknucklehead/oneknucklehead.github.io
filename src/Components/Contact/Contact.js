@@ -13,6 +13,7 @@ import {
 } from 'react-icons/ai'
 import { FiTwitter } from 'react-icons/fi'
 import { ContactContent, ContactWrapper } from './ContactElements'
+import { Row } from 'react-bootstrap'
 const Contact = () => {
   return (
     <>
@@ -30,23 +31,25 @@ const Contact = () => {
           <br /> ( unless your internet is down, then just throw a pigeon my way
           📧 )
         </ContactContent>
-        <SocialContainer>
-          <SocialLink href='https://www.instagram.com/oneknucklehead/'>
-            <AiOutlineInstagram />
-          </SocialLink>
-          <SocialLink href='https://github.com/oneknucklehead'>
-            <AiFillGithub />
-          </SocialLink>
-          <SocialLink href='mailto:zohebcool1542@gmail.com'>
-            <AiOutlineMail />
-          </SocialLink>
-          <SocialLink href='https://twitter.com/oneknucklehead_'>
-            <FiTwitter />
-          </SocialLink>
-          <SocialLink href='https://www.linkedin.com/in/oneknucklehead/'>
-            <AiFillLinkedin />
-          </SocialLink>
-        </SocialContainer>
+        <Row>
+          <SocialContainer>
+            <SocialLink href='https://www.instagram.com/oneknucklehead/'>
+              <AiOutlineInstagram />
+            </SocialLink>
+            <SocialLink href='https://github.com/oneknucklehead'>
+              <AiFillGithub />
+            </SocialLink>
+            <SocialLink href='mailto:zohebcool1542@gmail.com'>
+              <AiOutlineMail />
+            </SocialLink>
+            <SocialLink href='https://twitter.com/oneknucklehead_'>
+              <FiTwitter />
+            </SocialLink>
+            <SocialLink href='https://www.linkedin.com/in/oneknucklehead/'>
+              <AiFillLinkedin />
+            </SocialLink>
+          </SocialContainer>
+        </Row>
       </ContactWrapper>
     </>
   )
