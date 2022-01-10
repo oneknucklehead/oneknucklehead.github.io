@@ -52,7 +52,7 @@ const Header = ({ theme, toggleTheme, toggle }) => {
           </NavMenu>
           <NavBtn>
             <NavBtnLink
-              href='https://drive.google.com/file/d/17F9OEIATYsTXBr9KGKvorV7T2-UIEs8b/view?usp=sharing'
+              href='https://drive.google.com/file/d/1IDkH8auXVgEiveZegSBLhcobGX1Rm1BM/view?usp=sharing'
               target='_blank'
             >
               Resume
