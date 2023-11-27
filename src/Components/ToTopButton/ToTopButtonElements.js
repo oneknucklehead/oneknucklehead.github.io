@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-import { Link as LinkScroll } from 'react-scroll'
+import styled, { keyframes } from 'styled-components';
+import { Link as LinkScroll } from 'react-scroll';
 
 const scrollTop = keyframes`
     from{
@@ -8,12 +8,12 @@ const scrollTop = keyframes`
     to{
         transform:translateY(-2px);
     }
-`
+`;
 export const ScrollToTop = styled(LinkScroll)`
   position: fixed;
   width: 40px;
   height: 40px;
-  bottom: 10px;
+  bottom: 15px;
   left: 20px;
   border-radius: 100%;
   background: ${({ theme }) => theme.secondaryFont};
@@ -32,8 +32,8 @@ export const ScrollToTop = styled(LinkScroll)`
   &:visited {
     color: ${({ theme }) => theme.primaryFont};
   }
-`
+`;
 
 export const Icon = styled.div`
   animation: ${scrollTop} 0.5s alternate ease infinite;
-`
+`;

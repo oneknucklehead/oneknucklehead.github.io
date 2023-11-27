@@ -1,6 +1,6 @@
-import React from 'react'
-import { Col, Image, Row } from 'react-bootstrap'
-import image from '../../Images/profile1.jpg'
+import React from 'react';
+import { Col, Image, Row } from 'react-bootstrap';
+import image from '../../Images/profile1.jpg';
 import {
   Container,
   Wrapper,
@@ -9,16 +9,17 @@ import {
   Para,
   SocialContainer,
   SocialLink,
-} from './HomeElements'
+  Toggler
+} from './HomeElements';
 import {
   AiOutlineInstagram,
   AiFillGithub,
   AiOutlineMail,
   AiFillLinkedin,
-} from 'react-icons/ai'
-import { FaDev } from 'react-icons/fa'
-import { FiTwitter } from 'react-icons/fi'
-import Typewriter from 'typewriter-effect'
+} from 'react-icons/ai';
+import { FaDev } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
+import Typewriter from 'typewriter-effect';
 const Home = ({ theme, toggleTheme }) => {
   return (
     <Wrapper id='about'>
@@ -55,6 +56,9 @@ const Home = ({ theme, toggleTheme }) => {
               fluid
               thumbnail
             />
+            <Toggler theme={theme} onClick={toggleTheme}>
+              {theme === "light" ? "🌛" : "🌞"}
+            </Toggler>
           </Container>
         </Col>
       </Row>
@@ -81,7 +85,7 @@ const Home = ({ theme, toggleTheme }) => {
         </SocialContainer>
       </Row>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 // import { Button, Container, Nav, Navbar } from 'react-bootstrap'
-import { FaBars } from 'react-icons/fa'
-import { FiMoon, FiSun } from 'react-icons/fi'
+import { FaBars } from 'react-icons/fa';
+import { FiMoon, FiSun } from 'react-icons/fi';
 import {
   Nav,
   NavbarContainer,
@@ -12,16 +12,23 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from './HeaderElements'
+} from './HeaderElements';
 
 const Header = ({ theme, toggleTheme, toggle }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    setScrollPosition(window.scrollY);
+    console.log(scrollPosition);
+  }, [scrollPosition]);
   return (
     <>
+
       <Nav theme={theme}>
         <NavbarContainer>
           <NavLogo onClick={toggleTheme}>
-            <span>{theme === 'light' ? <FiMoon /> : <FiSun />}</span>&nbsp;
-            Knucklehead.
+            <span>{theme === 'light' ? <span style={{ color: "#121212" }}> <FiMoon /></span> : <span style={{ color: "#fff" }}> <FiSun /></span>}</span>&nbsp;
+            Zoheb.
           </NavLogo>
 
           <MobileIcon onClick={toggle}>
@@ -60,8 +67,9 @@ const Header = ({ theme, toggleTheme, toggle }) => {
           </NavBtn>
         </NavbarContainer>
       </Nav>
-    </>
-  )
-}
 
-export default Header
+    </>
+  );
+};
+
+export default Header;

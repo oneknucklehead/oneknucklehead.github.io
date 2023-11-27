@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 export const ProjectWrapper = styled.div`
-  margin: 150px 0;
+  margin: 180px 0;
   width: 100%;
-  heihgt: 100%;
-`
+  height: 100%;
+`;
 
 export const CardWrapper = styled.div`
   margin-top: 150px;
-`
+`;
 export const Card = styled.div`
   min-height: 300px;
   border: 1px solid ${({ theme }) => theme.primaryFont};
@@ -18,8 +18,8 @@ export const Card = styled.div`
   @media screen and (max-width: 768px) {
     margin: 10px 20px;
   }
-`
-export const CardContent = styled.div``
+`;
+export const CardContent = styled.div``;
 export const CardHeader = styled.a`
   cursor: pointer;
   color: ${({ theme }) => theme.primaryFont};
@@ -49,21 +49,21 @@ export const CardHeader = styled.a`
   @media screen and (max-width: 320px) {
     display: block;
   }
-`
+`;
 export const CardInfo = styled.div`
   font-size: 20px;
   font-weight: 600;
-`
+`;
 export const Link = styled.a`
   display: block;
   text-decoration: none;
   cursor: pointer;
   margin: 0 0 10px 0;
-`
+`;
 export const Stack = styled.div`
   font-style: italic;
   font-size: 14px;
-`
+`;
 export const MoreButton = styled.a`
   background-color: ${({ theme }) => theme.secondaryFont};
   padding: 15px;
@@ -80,5 +80,5 @@ export const MoreButton = styled.a`
   &:visited {
     color: #fff;
   }
-`
-export const RepoLink = styled.a``
+`;
+export const RepoLink = styled.a``;
